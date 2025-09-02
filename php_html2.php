@@ -27,5 +27,10 @@
         <h1>유저 정보를 입력하시오</h1>
     </div>
     <?php } ?>
+
+    <?php
+    $input = "<script>alert('해킹!');</script>";
+    echo htmlspecialchars($input); // htmlspecialchars => html input 문자로 인식(코드공격X)
+    ?>
 </body>
 </html>
